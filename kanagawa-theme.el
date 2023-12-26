@@ -160,6 +160,7 @@
    `(numbers                                       ((,class (:background ,sakura-pink))))
    `(region                                        ((,class (:background ,wave-blue-2))))
    `(separator-line                                ((,class (:background ,sumi-ink-0))))
+   `(fill-column-indicator                         ((,class (:background ,sumi-ink-1b :foreground ,sumi-ink-0))))
    `(shadow                                        ((,class (:background ,sumi-ink-0))))
    `(success                                       ((,class (:foreground ,wave-aqua-2))))
    `(vertical-border                               ((,class (:foreground ,sumi-ink-4))))
