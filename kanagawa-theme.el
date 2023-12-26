@@ -243,7 +243,7 @@
    `(org-meta-line                                 ((,class (:background ,winter-green :foreground ,spring-green))))
    `(org-block                                     ((,class (:background ,sumi-ink-0 :foreground ,sumi-ink-4))))
    `(org-block-begin-line                          ((,class (:background ,winter-blue :foreground ,spring-blue))))
-   `(org-block-end-line                            ((,class (:background ,winter-red :foreground ,peach-red))))
+   `(org-block-end-line                            ((,class (:background ,winter-blue :foreground ,spring-blue))))
    `(org-headline-done                             ((,class (:foreground ,dragon-blue :strike-through t))))
    `(org-todo                                      ((,class (:foreground ,surimi-orange :weight bold))))
    `(org-headline-todo                             ((,class (:foreground ,sumi-ink-2))))
