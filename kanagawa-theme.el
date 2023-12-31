@@ -119,14 +119,14 @@
       (spring-blue      (if (true-color-p) "#7FB4CA" "#717C7C"))
       (light-blue       (if (true-color-p) "#A3D4D5" "#717C7C"))
       (spring-green     (if (true-color-p) "#98BB6C" "#717C7C"))
-      (boat-yellow-1    (if (true-color-p) "#938056" "#717C7C"))
-      (boat-yellow-2    (if (true-color-p) "#C0A36E" "#717C7C"))
+      (boat-yellow-1    (if (true-color-p) "#C0A36E" "#717C7C"))
+;      (boat-yellow-2    (if (true-color-p) "#938056" "#717C7C"))
       (carp-yellow      (if (true-color-p) "#E6C384" "#717C7C"))
       (sakura-pink      (if (true-color-p) "#D27E99" "#717C7C"))
       (wave-red         (if (true-color-p) "#E46876" "#717C7C"))
       (peach-red        (if (true-color-p) "#FF5D62" "#717C7C"))
       (surimi-orange    (if (true-color-p) "#FFA066" "#717C7C"))
-      (katana-gray      (if (true-color-p) "#717C7C" "#717C7C"))
+;      (katana-gray      (if (true-color-p) "#717C7C" "#717C7C"))
       (comet            (if (true-color-p) "#54536D" "#4e4e4e")))
   (custom-theme-set-faces
    'kanagawa
@@ -155,7 +155,7 @@
    `(mode-line                                     ((,class (:background ,sumi-ink-0))))
    `(mode-line-inactive                            ((,class (:background unspecified :foreground ,sumi-ink-4))))
    `(mode-line-active                              ((,class (:background ,sumi-ink-0 :foreground ,old-white))))
-   `(mode-line-highlight                           ((,class (:foreground ,boat-yellow-2))))
+   `(mode-line-highlight                           ((,class (:foreground ,boat-yellow-1))))
    `(mode-line-buffer-id                           ((,class (:foreground ,wave-aqua-2 :weight bold))))
    `(numbers                                       ((,class (:background ,sakura-pink))))
    `(region                                        ((,class (:background ,wave-blue-2))))
@@ -171,7 +171,7 @@
 
    ;; Font lock
    `(font-lock-type-face                           ((,class (:foreground ,wave-aqua-2))))
-   `(font-lock-regexp-grouping-backslash           ((,class (:foreground ,boat-yellow-2))))
+   `(font-lock-regexp-grouping-backslash           ((,class (:foreground ,boat-yellow-1))))
    `(font-lock-keyword-face                        ((,class (:foreground ,oni-violet :slant ,(if kanagawa-theme-keyword-italic 'italic 'normal)))))
    `(font-lock-warning-face                        ((,class (:foreground ,ronin-yellow))))
    `(font-lock-string-face                         ((,class (:foreground ,fuji-white :slant italic))))
@@ -185,7 +185,7 @@
    `(font-lock-comment-delimiter-face              ((,class (:foreground ,fuji-gray :slant ,(if kanagawa-theme-keyword-italic 'italic 'normal)))))
    `(font-lock-doc-face                            ((,class (:foreground ,comet))))
    `(font-lock-doc-markup-face                     ((,class (:foreground ,comet))))
-   `(font-lock-preprocessor-face                   ((,class (:foreground ,boat-yellow-2))))
+   `(font-lock-preprocessor-face                   ((,class (:foreground ,boat-yellow-1))))
    `(elisp-shorthand-font-lock-face                ((,class (:foreground ,fuji-white))))
    `(info-xref                                     ((,class (:foreground ,carp-yellow))))
    `(minibuffer-prompt-end                         ((,class (:foreground ,autumn-red :background ,winter-red))))
@@ -221,7 +221,7 @@
    `(doom-modeline-info                            ((,class (:weight bold :foreground ,light-blue))))
    `(doom-modeline-project-dir                     ((,class (:weight bold :foreground ,surimi-orange))))
    `(doom-modeline-bar                             ((,class (:weight bold :background ,spring-violet-1))))
-   `(doom-modeline-panel                           ((,class (:inherit bold :background ,boat-yellow-2 :foreground ,sumi-ink-2))))
+   `(doom-modeline-panel                           ((,class (:inherit bold :background ,boat-yellow-1 :foreground ,sumi-ink-2))))
    `(doom-themes-visual-bell                       ((,class (:background ,autumn-red))))
 
    ;; elfeed
@@ -256,7 +256,7 @@
    `(org-ellipsis                                  ((,class (:foreground ,wave-blue-2 :weight bold))))
    `(org-level-1                                   ((,class (:inherit bold :foreground ,peach-red :height ,(if kanagawa-theme-org-height 1.3 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
    `(org-level-2                                   ((,class (:inherit bold :foreground ,spring-violet-2 :height ,(if kanagawa-theme-org-height 1.2 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
-   `(org-level-3                                   ((,class (:foreground ,boat-yellow-2 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+   `(org-level-3                                   ((,class (:foreground ,boat-yellow-1 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
    `(org-level-4                                   ((,class (:foreground ,fuji-white))))
    `(org-level-5                                   ((,class (:foreground ,fuji-white))))
    `(org-level-6                                   ((,class (:foreground ,carp-yellow))))
@@ -277,7 +277,7 @@
    `(swiper-line-face                              ((,class (:foreground ,carp-yellow))))
    `(swiper-background-match-face-1                ((,class (:background ,surimi-orange :foreground ,sumi-ink-0))))
    `(swiper-background-match-face-2                ((,class (:background ,crystal-blue :foreground ,sumi-ink-0))))
-   `(swiper-background-match-face-3                ((,class (:background ,boat-yellow-2 :foreground ,sumi-ink-0))))
+   `(swiper-background-match-face-3                ((,class (:background ,boat-yellow-1 :foreground ,sumi-ink-0))))
    `(swiper-background-match-face-4                ((,class (:background ,peach-red :foreground ,sumi-ink-0))))
    `(swiper-match-face-1                           ((,class (:inherit swiper-background-match-face-1))))
    `(swiper-match-face-2                           ((,class (:inherit swiper-background-match-face-2))))
@@ -353,7 +353,7 @@
    `(highlight-indent-guides-even-face             ((,class (:foreground ,sumi-ink-2))))
    `(highlight-indent-guides-odd-face              ((,class (:foreground ,comet))))
 
-   `(highlight-operators-face                      ((,class (:foreground ,boat-yellow-2))))
+   `(highlight-operators-face                      ((,class (:foreground ,boat-yellow-1))))
    `(highlight-quoted-symbol                       ((,class (:foreground ,spring-green))))
    `(highlight-numbers-face                        ((,class (:foreground ,sakura-pink))))
    `(highlight-symbol-face                         ((,class (:background ,wave-blue-1 :foreground ,light-blue))))
@@ -533,7 +533,7 @@
    `(tree-sitter-hl-face:constant                  ((,class (:foreground ,surimi-orange))))
    `(tree-sitter-hl-face:constant.builtin          ((,class (:foreground ,carp-yellow :weight semi-bold))))
 
-   `(tree-sitter-hl-face:embedded                  ((,class (:foreground ,boat-yellow-2))))
+   `(tree-sitter-hl-face:embedded                  ((,class (:foreground ,boat-yellow-1))))
 
    `(tree-sitter-hl-face:function                  ((,class (:foreground ,crystal-blue))))
    `(tree-sitter-hl-face:function.builtin          ((,class (:foreground ,peach-red :slant italic :background ,winter-red))))
