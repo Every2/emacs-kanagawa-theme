@@ -484,7 +484,7 @@
    ;; tab-bar
    `(tab-bar                                       ((,class (:background ,sumi-ink-0))))
    `(tab-bar-tab                                   ((,class (:background ,sumi-ink-1b :foreground ,fuji-white))))
-   `(tab-bar-tab-inactive                          ((,class (:background ,sumi-ink-0 :foreground ,sumi-ink-4))))
+   `(tab-bar-tab-inactive                          ((,class (:background ,sumi-ink-0 :foreground ,sumi-ink-4 :height 0.8))))
 
    ;; centaur-tabs
    `(centaur-tabs-active-bar-face                  ((,class (:background ,spring-blue :foreground ,fuji-white))))
