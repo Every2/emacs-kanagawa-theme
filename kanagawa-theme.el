@@ -161,7 +161,7 @@
    `(region                                        ((,class (:background ,wave-blue-2))))
    `(separator-line                                ((,class (:background ,sumi-ink-0))))
    `(fill-column-indicator                         ((,class (:background ,sumi-ink-1b :foreground ,sumi-ink-0))))
-   `(shadow                                        ((,class (:background ,sumi-ink-0))))
+   `(shadow                                        ((,class (:foreground ,fuji-gray))))
    `(success                                       ((,class (:foreground ,wave-aqua-2))))
    `(vertical-border                               ((,class (:foreground ,sumi-ink-4))))
    `(warning                                       ((,class (:foreground ,ronin-yellow))))
@@ -402,7 +402,9 @@
    `(lsp-ui-peek-filename                          ((,class (:foreground ,light-blue))))
    `(lsp-ui-sideline-code-action                   ((,class (:foreground ,carp-yellow))))
    `(lsp-ui-sideline-current-symbol                ((,class (:foreground ,spring-blue))))
-   `(lsp-ui-sideline-symbol                        ((,class (:foreground ,dragon-blue))))
+
+   ;; Eglot
+   `(eglot-diagnostic-tag-unnecessary-face         ((,class (:background ,sumi-ink-0 :foreground ,fuji-gray))))
 
    ;; dashboard
    `(dashboard-heading                             ((,class (:foreground ,spring-violet-2 :weight bold))))
