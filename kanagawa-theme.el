@@ -152,8 +152,10 @@
    `(lv-separator                                  ((,class (:foreground ,wave-blue-2 :background ,sumi-ink-2))))
    `(match                                         ((,class (:background ,carp-yellow :foreground ,sumi-ink-0))))
    `(menu                                          ((,class (:background ,sumi-ink-0 :foreground ,fuji-white))))
-   `(mode-line                                     ((,class (:background ,sumi-ink-0))))
-   `(mode-line-inactive                            ((,class (:background unspecified :foreground ,sumi-ink-4))))
+   `(mode-line                                     ((,class (:background ,sumi-ink-0 :foreground ,fuji-white :weight bold
+							     :box '(:line-width 1 :color ,fuji-white)))))
+   `(mode-line-inactive                            ((,class (:background unspecified :foreground ,sumi-ink-4
+							     :box '(:color ,wave-blue-2)))))
    `(mode-line-active                              ((,class (:background ,sumi-ink-0 :foreground ,old-white))))
    `(mode-line-highlight                           ((,class (:foreground ,boat-yellow-1))))
    `(mode-line-buffer-id                           ((,class (:foreground ,wave-aqua-2 :weight bold))))
@@ -193,7 +195,6 @@
    `(epa-mark                                      ((,class (:foreground ,wave-red))))
    `(dired-mark                                    ((,class (:foreground ,wave-red))))
    `(trailing-whitespace                           ((,class (:background ,comet))))
-   `(mode-line                                     ((,class (:background ,sumi-ink-0 :foreground ,fuji-white :weight bold))))
 
    ;; Battery colors
    `(doom-modeline-battery-critical                ((,class (:foreground ,peach-red))))
