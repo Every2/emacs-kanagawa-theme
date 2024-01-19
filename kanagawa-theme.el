@@ -160,7 +160,7 @@
    `(mode-line-highlight                           ((,class (:foreground ,boat-yellow-1))))
    `(mode-line-buffer-id                           ((,class (:foreground ,wave-aqua-2 :weight bold))))
    `(numbers                                       ((,class (:background ,sakura-pink))))
-   `(region                                        ((,class (:background ,wave-blue-2))))
+   `(region                                        ((,class (:background ,wave-blue-1))))
    `(separator-line                                ((,class (:background ,sumi-ink-0))))
    `(fill-column-indicator                         ((,class (:background ,sumi-ink-1b :foreground ,sumi-ink-0))))
    `(shadow                                        ((,class (:foreground ,fuji-gray))))
