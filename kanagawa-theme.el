@@ -511,6 +511,11 @@
    `(git-gutter:deleted                            ((,class (:foreground ,wave-red))))
    `(git-gutter:modified                           ((,class (:foreground ,spring-blue))))
 
+   ;; diff-hl
+   `(diff-hl-change                               ((,class (:foreground ,spring-blue :background ,winter-blue))))
+   `(diff-hl-delete                               ((,class (:foreground ,peach-red :background ,winter-red))))
+   `(diff-hl-insert                               ((,class (:foreground ,comet :background ,winter-blue))))
+
    `(diff-hl-margin-change                         ((,class (:foreground ,spring-blue :background ,winter-blue))))
    `(diff-hl-margin-delete                         ((,class (:foreground ,peach-red :background ,winter-red))))
    `(diff-hl-margin-insert                         ((,class (:foreground ,comet :background ,winter-blue))))
