@@ -152,11 +152,11 @@
    `(lv-separator                                  ((,class (:foreground ,wave-blue-2 :background ,sumi-ink-2))))
    `(match                                         ((,class (:background ,carp-yellow :foreground ,sumi-ink-0))))
    `(menu                                          ((,class (:background ,sumi-ink-0 :foreground ,fuji-white))))
-   `(mode-line                                     ((,class (:background ,sumi-ink-0 :foreground ,fuji-white :weight bold
-							     :box '(:line-width 1 :color ,fuji-white)))))
+   `(mode-line                                     ((,class (:background ,sumi-ink-0 :foreground ,fuji-white :weight bold))))
    `(mode-line-inactive                            ((,class (:background unspecified :foreground ,sumi-ink-4
-							     :box '(:color ,wave-blue-2)))))
-   `(mode-line-active                              ((,class (:background ,sumi-ink-0 :foreground ,old-white))))
+									 :box (:line-width 1 :color ,sumi-ink-2)))))
+   `(mode-line-active                              ((,class (:background ,sumi-ink-0 :foreground ,old-white
+									 :box (:line-width 1 :color ,sumi-ink-3)))))
    `(mode-line-highlight                           ((,class (:foreground ,boat-yellow-1))))
    `(mode-line-buffer-id                           ((,class (:foreground ,wave-aqua-2 :weight bold))))
    `(numbers                                       ((,class (:background ,sakura-pink))))
