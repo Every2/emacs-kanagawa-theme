@@ -265,6 +265,17 @@
    `(org-level-8                                   ((,class (:foreground ,spring-green))))
    `(org-priority                                  ((,class (:foreground ,peach-red :inherit bold :weight ,(if kanagawa-theme-org-priority-bold 'unspecified 'normal)))))
 
+   ;; imenu
+   `(imenu-list-entry-face                         ((,class (:foreground ,fuji-white))))
+   `(imenu-list-entry-face-0                       ((,class (:foreground ,peach-red))))
+   `(imenu-list-entry-face-1                       ((,class (:foreground ,spring-violet-2))))
+   `(imenu-list-entry-face-2                       ((,class (:foreground ,boat-yellow-1))))
+   `(imenu-list-entry-face-3                       ((,class (:foreground ,fuji-white))))
+   `(imenu-list-entry-subalist-face-0              ((,class (:foreground ,peach-red))))
+   `(imenu-list-entry-subalist-face-1              ((,class (:foreground ,spring-violet-2))))
+   `(imenu-list-entry-subalist-face-2              ((,class (:foreground ,boat-yellow-1))))
+   `(imenu-list-entry-subalist-face-3              ((,class (:foreground ,fuji-white))))
+
    ;; which-key
    `(which-key-key-face                            ((,class (:inherit font-lock-variable-name-face))))
    `(which-func                                    ((,class (:inherit font-lock-function-name-face :weight bold))))
