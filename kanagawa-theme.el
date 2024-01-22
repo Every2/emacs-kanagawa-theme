@@ -239,6 +239,14 @@
    `(custom-link                                   ((,class (:foreground ,crystal-blue))))
    `(link                                          ((,class (:foreground ,crystal-blue))))
 
+   ;; markdown
+    `(markdown-header-face-1                       ((,class (:inherit bold :foreground ,peach-red))))
+    `(markdown-header-face-2                       ((,class (:inherit bold :foreground ,spring-violet-2))))
+    `(markdown-header-face-3                       ((,class (:foreground ,boat-yellow-1))))
+    `(markdown-header-face-4                       ((,class (:foreground ,fuji-white))))
+    `(markdown-header-face-5                       ((,class (:foreground ,fuji-white))))
+    `(markdown-header-face-6                       ((,class (:foreground ,carp-yellow))))
+
    ;; org-mode
    `(org-done                                      ((,class (:foreground ,dragon-blue))))
    `(org-code                                      ((,class (:background ,sumi-ink-0))))
