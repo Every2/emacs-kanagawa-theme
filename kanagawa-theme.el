@@ -251,7 +251,8 @@
 
  ;; org-mode
  `(org-done                                      ((,class (:foreground ,dragon-blue))))
- `(org-code                                      ((,class (:background ,sumi-ink-0))))
+ `(org-code                                      ((,class (:background ,sumi-ink-0
+								       :foreground ,fuji-gray))))
  `(org-meta-line                                 ((,class (:background ,winter-green :foreground ,spring-green))))
  `(org-block                                     ((,class (:background ,winter-blue :foreground ,fuji-white))))
  `(org-block-begin-line                          ((,class (:background ,winter-blue :foreground ,spring-blue))))
@@ -265,15 +266,15 @@
  `(org-hide                                      ((,class (:background ,sumi-ink-1b :foreground ,sumi-ink-1b))))
  `(org-date                                      ((,class (:foreground ,wave-blue-2))))
  `(org-ellipsis                                  ((,class (:foreground ,wave-blue-2 :weight bold))))
- `(org-level-1                                   ((,class (:inherit bold :foreground ,peach-red :height ,(if kanagawa-theme-org-height 1.3 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
- `(org-level-2                                   ((,class (:inherit bold :foreground ,spring-violet-2 :height ,(if kanagawa-theme-org-height 1.2 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
- `(org-level-3                                   ((,class (:foreground ,boat-yellow-1 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
- `(org-level-4                                   ((,class (:foreground ,fuji-white))))
- `(org-level-5                                   ((,class (:foreground ,fuji-white))))
- `(org-level-6                                   ((,class (:foreground ,carp-yellow))))
- `(org-level-7                                   ((,class (:foreground ,surimi-orange))))
- `(org-level-8                                   ((,class (:foreground ,spring-green))))
- `(org-priority                                  ((,class (:foreground ,peach-red :inherit bold :weight ,(if kanagawa-theme-org-priority-bold 'unspecified 'normal)))))
+ `(org-level-1                                   ((,class (:inherit bold :foreground ,peach-red :height ,(if kanagawa-theme-org-height 1.4 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
+ `(org-level-2                                   ((,class (:inherit bold :foreground ,spring-violet-2 :height ,(if kanagawa-theme-org-height 1.3 1.0) :weight ,(if kanagawa-theme-org-bold 'unspecified 'normal)))))
+ `(org-level-3                                   ((,class (:foreground ,boat-yellow-1 :height ,(if kanagawa-theme-org-height 1.2 1.0)))))
+ `(org-level-4                                   ((,class (:foreground ,peach-red :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+ `(org-level-5                                   ((,class (:foreground ,spring-violet-2 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+ `(org-level-6                                   ((,class (:foreground ,boat-yellow-1 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+ `(org-level-7                                   ((,class (:foreground ,peach-red :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+ `(org-level-8                                   ((,class (:foreground ,spring-violet-2 :height ,(if kanagawa-theme-org-height 1.1 1.0)))))
+ `(org-priority                                  ((,class (:foreground ,boat-yellow-1 :inherit bold :weight ,(if kanagawa-theme-org-priority-bold 'unspecified 'normal)))))
 
  ;; imenu
  `(imenu-list-entry-face                         ((,class (:foreground ,fuji-white))))
@@ -331,7 +332,7 @@
  `(show-paren-match                              ((,class (:background ,wave-aqua-1 :foreground ,sumi-ink-0 :weight bold :underline ,(when kanagawa-theme-underline-parens t)))))
  `(show-paren-match-expression                   ((,class (:background ,wave-aqua-1 :foreground ,sumi-ink-0 :weight bold))))
  `(show-paren-mismatch                           ((,class (:background ,peach-red :foreground ,old-white :underline ,(when kanagawa-theme-underline-parens t)))))
- `(tooltip                                       ((,class (:foreground ,sumi-ink-0 :background ,carp-yellow :weight bold))))
+ `(tooltip                                       ((,class (:foreground ,light-blue :background ,sumi-ink-0 :weight bold))))
 
  ;; company-box
  `(company-tooltip                               ((,class (:background ,sumi-ink-2))))
@@ -456,7 +457,8 @@
  `(term-color-green                              ((,class (:background ,wave-aqua-2 :foreground ,wave-aqua-2))))
  `(term-color-bright-green                       ((,class (:inherit term-color-green))))
  `(term-color-black                              ((,class (:background ,sumi-ink-0 :foreground ,fuji-white))))
- `(term-color-bright-black                       ((,class (:background ,sumi-ink-1b :foreground ,sumi-ink-1b))))
+ ;; NOTE - has effect on vterm as well so vterm specific settings bellow doesn't do much.
+ `(term-color-bright-black                       ((,class (:background ,sumi-ink-1b :foreground ,fuji-gray))))
  `(term-color-white                              ((,class (:background ,fuji-white :foreground ,fuji-white))))
  `(term-color-bright-white                       ((,class (:background ,old-white :foreground ,old-white))))
  `(term-color-red                                ((,class (:background ,peach-red :foreground ,peach-red))))
@@ -467,6 +469,10 @@
  `(term-color-bright-cyan                        ((,class (:background ,spring-blue :foreground ,spring-blue))))
  `(term-color-magenta                            ((,class (:background ,spring-violet-2 :foreground ,spring-violet-2))))
  `(term-color-bright-magenta                     ((,class (:background ,spring-violet-2 :foreground ,spring-violet-2))))
+ ;; vterm
+ `(vterm-color-black                             ((,class (:background ,sumi-ink-0 :foreground ,spring-violet-2))))
+ `(vterm-color-underline                         ((,class (:foreground ,fuji-white))))
+ `(vterm-color-inverse-video                     ((,class (:background ,sumi-ink-0 :inverse-video t))))
 
  ;; popup
  `(popup-face                                    ((,class (:inherit tooltip))))
