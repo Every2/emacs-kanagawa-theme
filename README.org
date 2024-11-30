@@ -1,3 +1,5 @@
+#DEPRECATED - I'll continue here - https://github.com/zikajk/emacs-cobrakai-theme
+
 * kanagawa-theme
 [[https://melpa.org/#/kanagawa-theme][file:https://melpa.org/packages/kanagawa-theme-badge.svg]]
 [[https://www.gnu.org/licenses/gpl-3.0][file:https://img.shields.io/badge/License-GPLv3-blue.svg]]
